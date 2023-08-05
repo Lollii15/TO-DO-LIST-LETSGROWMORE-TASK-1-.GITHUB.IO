@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing:border-box;
+}
+ .container{
+    width: 100;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #42085f);
+    padding: 10px;
+
+ }
+ .todo-app{
+    width:100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+ }
+ .todo-app h1{
+    color:#160065;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+ .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+ }
+ input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+ }
+ button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+ }
+ ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+ }
+ ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKwAAAB1CAMAAADk3voNAAAAKlBMVEX29vbPz8/S0tLz8/Pl5eXb29vt7e3X19ff39/q6urw8PDMzMzi4uL5+flECrLDAAACXklEQVR4nO2cW27sIBBEeZqX2f92LyYa0Xjm43pcWIlUZwHkqGlgInVZKUIIIb8V+x1Pa1aVnA9G63IVbYLfXa6Pqdrkm+ctzJ6fMK1qN+WmaqMYb9eX12mA6o+vX1zdHFCqB8YtVK0OaHpQ/Lq7IYJdm21Y1ArVI1vghVlT27jCtdkuqG3dP/2ly2/CBwJeNr39jfYSpe0iKbkYTpdfiWhXe3qz/GbVt5d63k+LJaiqqnPDxnuPe1XzHWhQmj9kWQsDqEQO0na/v6BA3rAG85tp2ivEgi+sWBh1MVYvzhjy3XVCFnYarOgEj1q0MYpQdtwPuyxKsOFWFccLtqiSJ6Hgbq80SgA9t5voA9iGiZbFbdfB6FqDkq1ju7DXt1wYJjvOV8D+3zT6Cyc7dgvXWp2NspSlLGU7lKWsoixlO5SlrKIsZTuUpayiLGU7lKWsoixlO5SlrKIsZTuUpayiLGU7lKWsoixlO5SlrKLs35JdNirlFsiO2XTsoL6oAkxWjvdhx7PHQCZuy8SAI3TyXUzoR5isGKUvwD4QBxc4kiqGfZEzxKK7kDEQMUCrHWrD5AgxcoxajWVhOyZjGgU6ljsFayCj71NQARuvmdMq8Xb88BSDA+dV5PD/kee7dylsfnKFduzBFC/RJcRN1e/IblbVGp4IO8eWdNHGx+ucA1b4Jjh4C4SBwMfBGjW9leTXui4Isnbgh+tli++ERXXtzJGz+yyNNLenDNi4JSz+dEC1qFhzCemBrxxsEN2w4Hb9RLUumsvfjJBR4bA/+O2I9qDl5L5le/yzHIQQQv6Lf+u4MHdTqyeEAAAAAElFTkSuQmCC");
+    background-size: cover;
+    background-position: center;
+
+    top: 12px;
+    left: 8px;
+
+ }
+ ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+
+ }
+ ul li.checked::before{
+    background-image: url("https://www.clipartmax.com/png/small/16-160331_check-mark-clip-art-free-free-check-mark-clip-art-pictures-black.png");
+ }
+ ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+ }
+ ul li span:hover{
+    background: #edeef0;
+ }
